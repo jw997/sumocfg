@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-08-16 16:03:15 by Eclipse SUMO netconvert Version v1_24_0+0013-ff043d4bbe2
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="opp.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="new"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.avoid-overlap value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <opposites.guess value="TRUE"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="true"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+</netconvertConfiguration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" avoidOverlap="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,-150.00,300.00,0.00" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id="-E4" from="End4" to="Start4" priority="-1">
+        <lane id="-E4_0" index="0" speed="13.89" length="300.00" shape="300.00,-148.40 0.00,-148.40">
+            <neigh lane="E4_0"/>
+        </lane>
+    </edge>
+    <edge id="E1" from="Start1" to="End1" priority="-1">
+        <lane id="E1_0" index="0" speed="13.89" length="300.00" shape="0.00,-1.60 300.00,-1.60"/>
+    </edge>
+    <edge id="E2" from="Start2" to="End2" priority="-1">
+        <lane id="E2_0" index="0" speed="13.89" length="300.00" width="8.00" shape="0.00,-54.00 300.00,-54.00"/>
+    </edge>
+    <edge id="E3" from="Start3" to="End3" priority="-1">
+        <lane id="E3_0" index="0" speed="13.89" length="300.00" shape="0.00,-104.80 300.00,-104.80"/>
+        <lane id="E3_1" index="1" speed="13.89" length="300.00" shape="0.00,-101.60 300.00,-101.60"/>
+    </edge>
+    <edge id="E4" from="Start4" to="End4" priority="-1">
+        <lane id="E4_0" index="0" speed="13.89" length="300.00" shape="0.00,-151.60 300.00,-151.60">
+            <neigh lane="-E4_0"/>
+        </lane>
+    </edge>
+
+    <junction id="End1" type="dead_end" x="300.00" y="0.00" incLanes="E1_0" intLanes="" shape="300.00,-3.20 300.00,0.00"/>
+    <junction id="End2" type="dead_end" x="300.00" y="-50.00" incLanes="E2_0" intLanes="" shape="300.00,-58.00 300.00,-50.00"/>
+    <junction id="End3" type="dead_end" x="300.00" y="-100.00" incLanes="E3_0 E3_1" intLanes="" shape="300.00,-106.40 300.00,-100.00"/>
+    <junction id="End4" type="dead_end" x="300.00" y="-150.00" incLanes="E4_0" intLanes="" shape="300.00,-150.00 300.00,-153.20 300.00,-150.00"/>
+    <junction id="Start1" type="dead_end" x="0.00" y="0.00" incLanes="" intLanes="" shape="0.00,0.00 0.00,-3.20"/>
+    <junction id="Start2" type="dead_end" x="0.00" y="-50.00" incLanes="" intLanes="" shape="0.00,-50.00 0.00,-58.00"/>
+    <junction id="Start3" type="dead_end" x="0.00" y="-100.00" incLanes="" intLanes="" shape="0.00,-100.00 0.00,-106.40"/>
+    <junction id="Start4" type="dead_end" x="0.00" y="-150.00" incLanes="-E4_0" intLanes="" shape="0.00,-150.00 0.00,-146.80 0.00,-150.00"/>
+
+</net>

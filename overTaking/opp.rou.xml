@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-08-16 15:39:04 by Eclipse SUMO netedit Version v1_24_0+0013-ff043d4bbe2
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+
+<vType id="veh_slow" speedFactor = "0.5" vClass="passenger"/>
+<vType id="veh_fast"  speedFactor = "1.5" vClass="passenger"/>
+<!--
+<trip departLane="best" type="veh_passenger"  depart="0.00"  id="37.8699291-122.2431386" fromLonLat="-122.2431386,37.8699291"  toLonLat="-122.25429172873584,37.85689641508998"  />
+<trip departLane="best" type="veh_passenger"  depart="0.00"  id="37.8724162-122.2460299" fromLonLat="-122.2460299,37.8724162"  toLonLat="-122.25429172873584,37.85689641508998"  />
+
+-->
+
+
+    <!--  Single lane -->
+    <trip id="t_10"  type="veh_slow" depart="0.00" fromJunction="Start1" toJunction="End1"/>
+    <trip id="t_11" type="veh_fast"  depart="1.00" color="red" fromJunction="Start1" toJunction="End1"/>
+
+    <!--  Wide Single lane -->
+	<trip id="t_21"  type="veh_slow" depart="2.00" fromJunction="Start2" toJunction="End2"/>
+    <trip id="t_22" type="veh_fast"  depart="3.00" color="red" fromJunction="Start2" toJunction="End2"/>
+
+	<!--  Double lane -->
+	<trip id="t_31"  type="veh_slow" depart="4.00" fromJunction="Start3" toJunction="End3"/>
+    <trip id="t_32" type="veh_fast"  depart="5.00" color="red" fromJunction="Start3" toJunction="End3"/>
+
+	<!--  One single lane edge each way -->
+	<trip id="t_41"  type="veh_slow" depart="6.00" fromJunction="Start4" toJunction="End4"/>
+    <trip id="t_42" type="veh_fast"  depart="7.00" color="red" fromJunction="Start4" toJunction="End4"/>
+</routes>
