@@ -6,11 +6,11 @@
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
 
 
-<vType id="veh_slow" speedFactor = "0.5" vClass="passenger"/>
+<vType id="veh_slow" speedFactor = "0.5" color="yellow" vClass="passenger"/>
 <vType id="veh_fast"  speedFactor = "1.5" color="red"  vClass="passenger"/>
 
 
-<vType id="veh_stopped"  color="blue"  vClass="passenger"/>
+<vType id="veh_stopped"  color="grey"  vClass="passenger"/>
 <!--
 <trip departLane="best" type="veh_passenger"  depart="0.00"  id="37.8699291-122.2431386" fromLonLat="-122.2431386,37.8699291"  toLonLat="-122.25429172873584,37.85689641508998"  />
 <trip departLane="best" type="veh_passenger"  depart="0.00"  id="37.8724162-122.2460299" fromLonLat="-122.2460299,37.8724162"  toLonLat="-122.25429172873584,37.85689641508998"  />
@@ -30,7 +30,7 @@
 	<trip id="t_31"  type="veh_slow" depart="4.00" fromJunction="Start3" toJunction="End3"/>
     <trip id="t_32" type="veh_fast"  depart="5.00"  fromJunction="Start3" toJunction="End3"/>
 
-	<!--  One single lane edge each way -->
+	<!--  One single lane edge each way, but with 3 parked cars in the way -->
 	<trip id="t_43" type="veh_stopped"  depart="5.91"  fromJunction="Start4" departPos="100" toJunction="End4">
         <stop edge="E4"  endPos="100" until="5000"/>
   	</trip>
@@ -40,7 +40,9 @@
 	<trip id="t_45" type="veh_stopped"  depart="5.993"  fromJunction="End4" departPos="130" toJunction="Start4">
        <stop edge="-E4"  endPos="130" until="5000"/>
   	</trip>
+
 	<trip id="t_41"  type="veh_slow" depart="6.00" fromJunction="Start4" toJunction="End4"/>
     <trip id="t_42" type="veh_fast"  depart="7.00"  fromJunction="Start4" toJunction="End4"/>
+    <trip id="t_46"  type="veh_slow" depart="7.01" fromJunction="End4" toJunction="Start4"/>
 
 </routes>
